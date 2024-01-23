@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character set and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the document -->
+    <title>Focus Styling Example</title>
+</head>
+<style>
+    /* Style for the input with class 'prenom' when focused */
+    .prenom:focus {
+        outline: none;                         /* Remove default focus outline */
+        background-color: rgb(163, 230, 230);  /* Set background color to a shade of light blue */
+        color: rgb(255, 39, 1);                /* Set text color to a shade of red */
+    }
+
+    /* Style for the input with class 'nom' when focused */
+    .nom:focus {
+        outline: none;                         /* Remove default focus outline */
+        background-color: rgb(163, 230, 230);  /* Set background color to a shade of light blue */
+        color: rgb(6, 240, 25);                /* Set text color to a shade of green */
+    }
+</style>
+<body>
+    <!-- Display input elements with specified styles -->
+    <input class="prenom" type="text" value="Red when focused">
+    <input class="nom" type="text" value="Green when focused">
+</body>
+</html>
